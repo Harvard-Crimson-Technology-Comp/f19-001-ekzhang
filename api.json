@@ -1,0 +1,68 @@
+[
+    {
+        "model": "api.UserModel",
+        "pk": 1,
+        "fields": {
+            "first_name": "Bob",
+            "last_name": "Dylan",
+            "api_token": "c7663a860736daa92636eae3e0a453dd23c0b65eadd3cde0a6ca8d60ff8ee029",
+            "password": "ce4d6442c288edbde60dc93977cbef2a6958bc2427444adef94c60064cb55908",
+            "username": "bob2",
+            "portfolio": 42
+        }
+    },
+    {
+        "model": "api.UserModel",
+        "pk": 2,
+        "fields": {
+            "first_name": "Nicholas",
+            "last_name": "Wong",
+            "api_token": "1360974bb4ede1cdbb00371e03951e3fb0cbccef65eaa03cd1e5a379fd4f40f5",
+            "password": "da17c13402bca42e4f4dbd3fe1cb45919d80b42e0a4f1a3ebbab455e04285b60",
+            "username": "nickwong",
+            "portfolio": 43
+        }
+    },
+    {
+        "model": "api.PortfolioModel",
+        "pk": 42,
+        "fields": {
+            "cash": 421239085.13
+        }
+    },
+    {
+        "model": "api.PortfolioModel",
+        "pk": 43,
+        "fields": {
+            "cash": 20.23
+        }
+    },
+    {
+        "model": "api.PurchaseModel",
+        "fields": {
+            "timestamp": "2019-09-22T03:41:50.932Z",
+            "user": 2,
+            "symbol": "ABC",
+            "price": 124.41,
+            "quantity": 300
+        }
+    },
+    {
+        "model": "api.PurchaseModel",
+        "fields": {
+            "timestamp": "2019-09-22T03:41:45.395Z",
+            "user": 2,
+            "symbol": "ABC",
+            "price": 124.39,
+            "quantity": 300
+        }
+    },
+    {
+        "model": "api.StockModel",
+        "fields": {
+            "portfolio": 43,
+            "symbol": "ABC",
+            "quantity": 600
+        }
+    }
+]

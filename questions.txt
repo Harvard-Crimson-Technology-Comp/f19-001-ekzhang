@@ -2,24 +2,29 @@
 
 Question 1. What is Django?
 
-# TODO
+Python web framework implementing WSGI, which comes with a lot of nice defaults
+that makes developing web applications fairly easy.
 
 Question 2. What is GraphQL?
 
-# TODO
+Query language created by Facebook that gives you more flexibility over types
+data you can ask for, improving specificity.
 
 Question 3. How does Django "talk" to GraphQL?
 
-# TODO
+Wrapper called graphene lets you define schemas, build GraphQL APIs.
+Graphene_django is used to connect graphene to Django models & also gives us
+the nice GraphiQL view.
 
 Question 4. Why do we use GraphQL + Django?
 
-# TODO
+Because we want to migrate to Node & GraphQL is nice.
 
 Question 5. What is a Web API?
 
-# TODO
+Communication protocol between client/server, usually implemented as 1+
+endpoints.
 
 Question 6. What is a "backend"?
 
-# TODO
+The server (usually), or more generally anything far from the interface.
