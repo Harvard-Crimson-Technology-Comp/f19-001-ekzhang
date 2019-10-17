@@ -1,6 +1,5 @@
 import graphene
 
-import project1.web.schema
 import project1.api.schema
 
 all_schemas = [
