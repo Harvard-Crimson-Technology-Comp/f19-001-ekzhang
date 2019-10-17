@@ -10,7 +10,17 @@ const imageStyle = {
   borderRadius: "12px"
 };
 
-const QUERY = gql``;
+const QUERY = gql`
+query {
+  users {
+    id
+    firstName
+    lastName
+    portfolio {
+      cash
+    }
+  }
+}`;
 
 export function Index() {
   let contents;
@@ -42,6 +52,29 @@ export function Index() {
         <p>This page should be informational.</p>
         <p>You can also display stats or things here if you want.</p>
         <hr></hr>
+        
+        <h1>users and cash</h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Cash</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.users.map((user:any) => (
+              <tr key={user.id}>
+                <td>{user.id}</td>
+                <td>{user.firstName}</td>
+                <td>{user.lastName}</td>
+                <td>{user.portfolio.cash}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     );
   }
